@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+		"dev:api": "turbo run dev --parallel --include-dependencies --filter=@wingetdotrun/api...",
+		"dev:web": "turbo run dev --parallel --include-dependencies --filter=@wingetdotrun/web...",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@7.15.0"
+}
